@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'persona';
-    src: url('https://github.com/kyuketsuki1/neroxdst/raw/refs/heads/main/fonts/font.otf') format('opentype');
+    src: url('fonts/font.otf') format('opentype');
 }
 
 body, html {
