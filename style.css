@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'persona';
+    src: url('https://github.com/kyuketsuki1/neroxdst/raw/refs/heads/main/fonts/font.otf') format('opentype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.intro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: cyan;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    font-family: 'persona', sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: 'persona', sans-serif;
+}
+
+.mute-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: 'persona', sans-serif;
+}
+
+.unmute-button {
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 'persona' sans-serif;
+}
+
+#volume-slider {
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    z-index: 3;
+}
