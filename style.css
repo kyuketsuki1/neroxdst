@@ -41,6 +41,11 @@ button {
     font-family: 'persona', sans-serif;
 }
 
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .mute-button {
     position: absolute;
     top: 10px;

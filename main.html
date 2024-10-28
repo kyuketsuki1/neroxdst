@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nero</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <script src="mainscript.js" defer></script>
+</head>
+<body>
+    <video id="main-loop" class="main-loop" autoplay muted loop>
+        <source src="media/main-loop.mp4" type="video/mp4">
+    </video>
+
+    <audio id="specialist" loop muted>
+        <source src="audio/specialist.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="text-container">
+        <h1 class="fade-in">Olá, eu sou o <span class="nero">Nero</span>!</h1>
+        <h2 class="fade-in">Sou um Desenvolvedor Web!</h2>
+        <img src="media/nero.gif" class="fade-in gif">
+    </div>
+    
+    <button id="mute-button" class="mute-button">🔊</button>
+    <button id="unmute-button" class="unmute-button" style="display: inline-block;">Unmute</button>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1" style="display: none;">
+
+    <div class="projetos">
+        <div class="card fade-in">
+            <img src="media/img test.jpg">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1</p>
+        </div>
+        
+        <div class="card fade-in">
+            <img src="media/img test.jpg">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2</p>
+        </div>
+
+        <div class="card fade-in">
+            <img src="media/img test.jpg">
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto 3</p>
+        </div>
+
+        <div class="card fade-in">
+            <img src="media/img test.jpg">
+            <h3>Projeto 4</h3>
+            <p>Descrição do projeto 4</p>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

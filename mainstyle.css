@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'persona';
+    src: url('fonts/font.otf') format('opentype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.main-loop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    top: 25%;
+    left: 2%; 
+    color: black; 
+    font-family: 'persona', sans-serif;
+    font-weight: bolder;
+}
+
+.text-container h1 {
+    margin-bottom: 0px; 
+}
+
+.text-container h2 {
+    margin-top: 0;
+}
+
+.nero {
+    color: darkblue; 
+    font-family: 'persona', sans-serif;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in; 
+}
+
+.fade-in.show {
+    opacity: 1; 
+}
+
+.gif {
+    position: relative; /* Para posicionamento relativo */
+    right: 30%;
+    max-width: 100%;
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 10px auto;
+    position: absolute;
+    transition: opacity 1s ease-in;
+}
+
+
+.mute-button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: 'persona', sans-serif;
+}
+
+.unmute-button {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#volume-slider {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    z-index: 3;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 55%; 
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 180px;
+    border: 2px solid #00f;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.card.show {
+    opacity: 1; /* Aparecer gradualmente */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.0em;
+    margin: 5px 0;
+    color: blue;
+    font-family: 'persona', sans-serif;
+    font-weight: bolder;
+}
+
+.card p {
+    font-size: 0.7em;
+    color: darkblue;
+    font-family: 'persona', sans-serif;
+    margin: 2px 0;
+    font-weight: bolder;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Pequeno efeito de zoom ao passar o mouse */
+}
